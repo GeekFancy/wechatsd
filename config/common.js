@@ -3,12 +3,12 @@ const home = process.env.location === 'home';
 module.exports = {
   secret: {
     token: 'wechat123456',
-    appid: 'wx8ebaaf46e5f6295e',
-    secret: '107f52be408d8de3b4d8d0a9f41d8513',
+    appid: 'wx27da4d9c25135f8b',
+    secret: 'b8a6ac1939347ca5fddc4ebeca204710',
     encodingAESKey: 'qKZrS7ClCedpfB8ovtIXaOUlnUyd4JhDH44v3STxPyq'
   },
-  server: 'http://www.chengdusa.com',
-  uiServer: 'http://ui.chengdusa.com',
+  server: 'https://wechat-sd.herokuapp.com/',
+  uiServer: 'https://wechat-sd.herokuapp.com/',
   templates: {
     Featured: '04zVisr--LdimrcGC6qNbExIkUyrn0e3tAYQRbrtvF8',
     NewBlog: 'ZKAOh-mi-r-SV7cHjxJQEyt1UUWgXD8VRyAMvV_KJCQ',
