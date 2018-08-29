@@ -2,9 +2,11 @@
   "name": "sd-wechat-service",
   "version": "0.0.0",
   "private": true,
-  "main": "app.js",
+  "engines": {
+    "node" : "8.9.1"
+  },
   "scripts": {
-    "start": "node app.js"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
