@@ -71,13 +71,7 @@ router.use('/', wechat(config.secret, function (req, res, next) {
     response = handleText(msg);
   }
 
-	console.log(response);
- if( req.query && req.query.echostr) {
-    console.log("echostr: " + req.query.echostr);
-    response = req.query.echostr;
-  }
-  else
-  {  response = "Not echostr";}
+  console.log(response);
 	
   res.reply(response);
 }));
