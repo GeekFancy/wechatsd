@@ -58,7 +58,12 @@ router.use('/', wechat(config.secret, function (req, res, next) {
 
 	console.log(req.weixin_xml);
   console.log(msg);
-
+	
+  if( req.query && req.query.echostr) {
+    console.log("echostr: " + echostr);
+    res.send(echostr);
+  }
+	
   if (msg.MsgType === 'event') {
     if (msg.Event === 'subscribe') {
       response = handleSubscribe(msg);
