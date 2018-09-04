@@ -3,7 +3,13 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.send("Index js server");
+ if( req.query && req.query.echostr) {
+    console.log("echostr: " + echostr);
+    res.send(echostr);
+  }
+  else
+  {  res.send("Index js server");}
+
 });
 
 router.get('/oauth', function (req, res, next) {
