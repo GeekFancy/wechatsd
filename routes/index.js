@@ -4,8 +4,8 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function (req, res, next) {
  if( req.query && req.query.echostr) {
-    console.log("echostr: " + echostr);
-    res.send(echostr);
+    console.log("echostr: " + req.query.echostr);
+    res.send(req.query.echostr);
   }
   else
   {  res.send("Index js server");}
