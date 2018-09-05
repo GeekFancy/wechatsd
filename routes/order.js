@@ -69,7 +69,7 @@ router.post('/create', function (req, res, next) {
     });
 
   } 
-  res.send('error');
+//  res.send('error');
 });
 
 module.exports = router;
