@@ -7,8 +7,8 @@ module.exports = {
     secret: 'b8a6ac1939347ca5fddc4ebeca204710',
     encodingAESKey: 'qKZrS7ClCedpfB8ovtIXaOUlnUyd4JhDH44v3STxPyq'
   },
-  server: 'https://wechat-sd.herokuapp.com/',
-  uiServer: 'https://wechat-sd.herokuapp.com/',
+  server: 'https://wechat-sd.herokuapp.com/wechat',
+  uiServer: 'https://wechatsd.herokuapp.com/sd_wechat_ui-master/',
   templates: {
     Featured: '04zVisr--LdimrcGC6qNbExIkUyrn0e3tAYQRbrtvF8',
     NewBlog: 'ZKAOh-mi-r-SV7cHjxJQEyt1UUWgXD8VRyAMvV_KJCQ',
