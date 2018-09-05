@@ -14,7 +14,7 @@ var order = require('./routes/order');
 var app = express();
 
 app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "http://ui.chengdusa.com");
+  res.header("Access-Control-Allow-Origin", "https://wechatsd.herokuapp.com/sd_wechat_ui-master/");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
