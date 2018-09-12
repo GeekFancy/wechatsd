@@ -68,7 +68,8 @@ router.post('/create', function (req, res, next) {
     orderStore.flush((error) => {
       sendkFMessage(openId, `Sales order ${id} had been created successfully!` ,res);
     });
-
+    
+    salesOrder();
   } 
 //  res.send('error');
 });
