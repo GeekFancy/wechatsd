@@ -4,6 +4,7 @@ const request = require('request');
 const router = express.Router();
 
 const orderStore = require('../lib/store').order;
+const salesOrder = require('../lib/createSalesOrder');
 const accessTokenHelper = require('../lib/token/access-token');
 
 const sendkFMessage = (userId, kfMessage, res) => {
