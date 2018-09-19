@@ -69,7 +69,7 @@ router.post('/create', function (req, res, next) {
       sendkFMessage(openId, `Sales order ${id} had been created successfully!` ,res);
     });
     
-    salesOrder();
+    //salesOrder();
   } 
 //  res.send('error');
 });
