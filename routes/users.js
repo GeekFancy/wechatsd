@@ -97,7 +97,7 @@ router.post('/bind', function (req, res, next) {
   userStore.append(user);
 
   userStore.flush((error) => {
-    sendkFMessage(openId, `Congcongratulations, Your account had been bound to ${email} successfully!` ,res);
+    sendkFMessage(openId, `Congratulations! Your account has been successfully associated with ${email}` ,res);
   });
 });
 
