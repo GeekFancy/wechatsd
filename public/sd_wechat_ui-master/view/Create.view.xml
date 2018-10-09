@@ -44,7 +44,7 @@
                                     class="sapUiSmallMarginBottom"
                                     type="Text"
                                     placeholder="Enter Order Type"
-                                    enabled="true"
+                                    enabled="false"
                                     editable="true"
                                     showValueHelp="true"
                                     valueHelpRequest="handleValueHelp" />
@@ -68,7 +68,7 @@
                                     id="inputShipToParty"
                                     class="sapUiSmallMarginBottom"
                                     type="Text"
-                                    enabled="true"
+                                    enabled="false"
                                     editable="true"
                                     showValueHelp="true"
                                     valueHelpRequest="handleCustomerHelp" />
