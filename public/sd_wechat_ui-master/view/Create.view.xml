@@ -37,7 +37,7 @@
 			<f:formContainers>
 				<f:FormContainer>
 					<f:formElements>
-						<f:FormElement label="{i18n>OrderType}">
+						<f:FormElement label="{i18n>OrderType}" visible="false">
 							<f:fields>
                                 <Input
                                     id="inputOrderType"
@@ -63,7 +63,7 @@
                                     valueHelpRequest="handleCustomerHelp" />
 							</f:fields>
 						</f:FormElement>
-                    	<f:FormElement label="{i18n>ShipToParty}">
+                    	<f:FormElement label="{i18n>ShipToParty}" visible="false">
 							<f:fields>
                                 <Input
                                     id="inputShipToParty"
@@ -74,6 +74,39 @@
                                     editable="true"
                                     showValueHelp="true"
                                     valueHelpRequest="handleCustomerHelp" />
+							</f:fields>
+						</f:FormElement>
+                        <f:FormElement label="Material">
+							<f:fields>
+                                <Input
+                                    id="inputMaterial"
+                                    class="sapUiSmallMarginBottom"
+                                    type="Text"
+                                    enabled="true"
+                                    editable="true"
+                                    showValueHelp="true"
+                                    valueHelpRequest="handleCustomerHelp" />
+							</f:fields>
+						</f:FormElement>
+                        <f:FormElement label="Quantity">
+							<f:fields>
+                                <Input
+                                    id="inputQuantity"
+                                    class="sapUiSmallMarginBottom"
+                                    type="Text"
+                                    enabled="true"
+                                    editable="true"
+                                    showValueHelp="true"
+                                    valueHelpRequest="handleCustomerHelp" />
+							</f:fields>
+						</f:FormElement>
+                    	<f:FormElement label="Requested Delivery Date">
+							<f:fields>
+                                <DateTimePicker
+                                    id="inputReqDelDate"
+                                    class="sapUiSmallMarginBottom"
+                                    placeholder="Enter Date ..."
+                                    change="handleDateChange"/>
 							</f:fields>
 						</f:FormElement>
                     	<f:FormElement label="{i18n>CusRef}">
