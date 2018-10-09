@@ -77,23 +77,39 @@ sap.ui.define([
 
             var values = [OrderType,SoldToParty,ShipToParty,CusReference,CusReferenceDate];
 
-            jQuery.each(values, function (i, oInput) {
-                var v = oInput.getValue();
-                if (v && v.length > 0) {
+            //Comment the validation temp
+            // jQuery.each(values, function (i, oInput) {
+            //     var v = oInput.getValue();
+            //     if (v && v.length > 0) {
                     
-                }else{
-                    oInput.setValueState("Error");
-                    bValidationError = true;
-                }
-            });
+            //     }else{
+            //         oInput.setValueState("Error");
+            //         bValidationError = true;
+            //     }
+            // });
+
+            // if (!bValidationError) {
+            //     MessageToast.show("Sales order created successfully!");
+            //     this.getOwnerComponent().wechat.createOrder({
+            //         "OpenId": this.openId,
+            //         "OrderType": OrderType.getValue(),
+            //         "SoldToParty": SoldToParty.getValue(),
+            //         "ShipToParty": ShipToParty.getValue(),
+            //         "CusReference": CusReference.getValue(),
+            //         "CusReferenceDate": CusReferenceDate.getValue()
+            //     });
+            //     wx.closeWindow();
+            // } else {
+            //     MessageBox.alert("A validation error has occured. Complete your input first");
+            // }
 
             if (!bValidationError) {
                 MessageToast.show("Sales order created successfully!");
                 this.getOwnerComponent().wechat.createOrder({
                     "OpenId": this.openId,
-                    "OrderType": OrderType.getValue(),
+                    "OrderType": "OR",
                     "SoldToParty": SoldToParty.getValue(),
-                    "ShipToParty": ShipToParty.getValue(),
+                    "ShipToParty": SoldToParty.getValue(),
                     "CusReference": CusReference.getValue(),
                     "CusReferenceDate": CusReferenceDate.getValue()
                 });
