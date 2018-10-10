@@ -130,6 +130,7 @@ sap.ui.define([
                     "ShipToParty": SoldToParty.getDescription(),
                     "Material": Material.getDescription(),
                     "Quantity": Quantity.getValue(),
+                    "Unit": "PC",
                     "ReqDelDate": ReqDelDate.getValue(),
                     "CusReference": CusReference.getValue(),
                     "CusReferenceDate": CusReferenceDate.getValue()
@@ -155,6 +156,19 @@ sap.ui.define([
                 var productInput = this.byId(this.inputId);
                 productInput.setValue(oSelectedItem.getTitle());
                 productInput.setDescription(oSelectedItem.getDescription())
+            }
+            evt.getSource().getBinding("items").filter([]);
+        },
+
+        _handleMaterialClose : function (evt) {
+            var oSelectedItem = evt.getParameter("selectedItem");
+            if (oSelectedItem) {
+                var productInput = this.byId(this.inputId);
+                productInput.setValue(oSelectedItem.getTitle());
+                productInput.setDescription(oSelectedItem.getDescription())
+
+                var quantityInput = this.byId("inputQuantity");
+                quantityInput.setDescription("PC");
             }
             evt.getSource().getBinding("items").filter([]);
         }

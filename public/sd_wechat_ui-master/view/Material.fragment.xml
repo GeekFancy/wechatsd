@@ -6,7 +6,7 @@
 		class="sapUiPopupWithPadding"
 		items="{valueHelp>/Material}"
 		search="_handleValueHelpSearch"
-		confirm="_handleValueHelpClose"
+		confirm="_handleMaterialClose"
 		cancel="_handleValueHelpClose">
 		<StandardListItem
 			title="{valueHelp>ID}"
