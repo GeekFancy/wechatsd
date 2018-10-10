@@ -85,7 +85,8 @@
                                     enabled="true"
                                     editable="true"
                                     showValueHelp="true"
-                                    valueHelpRequest="handleMaterialHelp" />
+                                    valueHelpRequest="handleMaterialHelp"
+                                    description="" />
 							</f:fields>
 						</f:FormElement>
                         <f:FormElement label="Quantity">

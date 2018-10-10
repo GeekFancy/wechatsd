@@ -148,6 +148,7 @@ sap.ui.define([
             if (oSelectedItem) {
                 var productInput = this.byId(this.inputId);
                 productInput.setValue(oSelectedItem.getTitle());
+                productInput.setDescription(oSelectedItem.getDescription())
             }
             evt.getSource().getBinding("items").filter([]);
         }
