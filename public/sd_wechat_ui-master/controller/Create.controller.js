@@ -87,6 +87,9 @@ sap.ui.define([
             var OrderType = oView.byId('inputOrderType');
             var SoldToParty = oView.byId('inputSoldToParty');
             var ShipToParty = oView.byId('inputShipToParty');
+            var Material = oView.byId('inputMaterial');
+            var Quantity = oView.byId('inputQuantity');
+            var ReqDelDate = oView.byId('inputReqDelDate');
             var CusReference = oView.byId('inputCusRef');
             var CusReferenceDate = oView.byId('inputCusRefDate');
 
@@ -123,8 +126,11 @@ sap.ui.define([
                 this.getOwnerComponent().wechat.createOrder({
                     "OpenId": this.openId,
                     "OrderType": "OR",
-                    "SoldToParty": SoldToParty.getValue(),
-                    "ShipToParty": SoldToParty.getValue(),
+                    "SoldToParty": SoldToParty.getDescription(),
+                    "ShipToParty": SoldToParty.getDescription(),
+                    "Material": Material.getDescription(),
+                    "Quantity": Quantity.getValue(),
+                    "ReqDelDate": ReqDelDate.getValue(),
                     "CusReference": CusReference.getValue(),
                     "CusReferenceDate": CusReferenceDate.getValue()
                 });
