@@ -85,7 +85,7 @@
                                     enabled="true"
                                     editable="true"
                                     showValueHelp="true"
-                                    valueHelpRequest="handleCustomerHelp" />
+                                    valueHelpRequest="handleMaterialHelp" />
 							</f:fields>
 						</f:FormElement>
                         <f:FormElement label="Quantity">
@@ -95,9 +95,7 @@
                                     class="sapUiSmallMarginBottom"
                                     type="Text"
                                     enabled="true"
-                                    editable="true"
-                                    showValueHelp="true"
-                                    valueHelpRequest="handleCustomerHelp" />
+                                    editable="true" />
 							</f:fields>
 						</f:FormElement>
                     	<f:FormElement label="Requested Delivery Date">

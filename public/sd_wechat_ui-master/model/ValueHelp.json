@@ -51,5 +51,19 @@
         "Customer": "GCA_LS",
         "City": "BANGALORE",
         "Code": "123421"
+    }],
+
+    "Material": [{
+        "ID": "M001",
+        "Description": "Apple"
+    },{
+        "ID": "M002",
+        "Description": "Banana"
+    },{
+        "ID": "M003",
+        "Description": "Orange"
+    },{
+        "ID": "M004",
+        "Description": "Watermelon"
     }]
 }

@@ -65,6 +65,21 @@ sap.ui.define([
             this._CustomerDialog.open();
         },
 
+        handleMaterialHelp: function(oController) {
+            this.inputId = oController.oSource.sId;
+            // create value help dialog
+            if (!this._MaterialDialog) {
+                this._MaterialDialog = sap.ui.xmlfragment(
+                    "sap.ui.sd.view.Material",
+                    this
+                );
+                this.getView().addDependent(this._MaterialDialog);
+            }
+
+            // open value help dialog
+            this._MaterialDialog.open();
+        },
+
         onSubmit: function() {
             var oView = this.getView();
             var bValidationError = false;
