@@ -126,6 +126,7 @@ sap.ui.define([
                 this.getOwnerComponent().wechat.createOrder({
                     "OpenId": this.openId,
                     "OrderType": "OR",
+                    "Status": "In Process",                   
                     "SoldToParty": SoldToParty.getDescription(),
                     "ShipToParty": SoldToParty.getDescription(),
                     "Material": Material.getDescription(),

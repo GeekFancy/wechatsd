@@ -20,6 +20,10 @@
     }],
 
     "Customers": [{
+        "Customer": "S10100251",
+        "City": "TechTronic Inc. (DE)",
+        "Code": "560067"
+    },{
         "Customer": "CUSTOMER1",
         "City": "SHANGHAI",
         "Code": "560066"
@@ -54,16 +58,19 @@
     }],
 
     "Material": [{
-        "ID": "M001",
-        "Description": "Apple"
+        "ID": "TG-D010",
+        "Description": "Trading Goods PointTG-D010"
     },{
-        "ID": "M002",
-        "Description": "Banana"
+        "ID": "TG-D011",
+        "Description": "Trading Goods PointTG-D011"
     },{
-        "ID": "M003",
-        "Description": "Orange"
+        "ID": "TG-D012",
+        "Description": "Trading Goods PointTG-D012"
     },{
-        "ID": "M004",
-        "Description": "Watermelon"
+        "ID": "TG-D013",
+        "Description": "Trading Goods PointTG-D013"
+    },{
+        "ID": "TG-D014",
+        "Description": "Trading Goods PointTG-D014"
     }]
 }
