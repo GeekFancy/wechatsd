@@ -64,12 +64,13 @@ router.post('/create', function (req, res, next) {
     order[id] = orderData;
     console.log(orderData);
     orderStore.append(order);
-
+    //salesOrder();
     orderStore.flush((error) => {
       sendkFMessage(openId, `Sales order ${id} had been created successfully!` ,res);
     });
     
-    //salesOrder();
+    const salesOrderId = salesOrder();
+    sendkFMessage(openId, `Sales order ${salesOrderId} had been created successfully!` ,res);
   } 
 //  res.send('error');
 });
