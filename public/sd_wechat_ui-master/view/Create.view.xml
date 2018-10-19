@@ -101,7 +101,7 @@
 						</f:FormElement>
                     	<f:FormElement label="Requested Delivery Date">
 							<f:fields>
-                                <DateTimePicker
+                                <DatePicker
                                     id="inputReqDelDate"
                                     class="sapUiSmallMarginBottom"
                                     placeholder="Enter Date ..."
@@ -120,7 +120,7 @@
 						</f:FormElement>
                     	<f:FormElement label="{i18n>CusRefDate}">
 							<f:fields>
-                                <DateTimePicker
+                                <DatePicker
                                     id="inputCusRefDate"
                                     class="sapUiSmallMarginBottom"
                                     placeholder="Enter Date ..."

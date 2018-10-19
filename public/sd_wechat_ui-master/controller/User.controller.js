@@ -108,7 +108,7 @@
             var oButton = this.getView().byId('buttonGetCode');
 
             oButton.setEnabled(false);
-            oButton.setText('sending..');
+            oButton.setText('Sent');
          }
      });
  });

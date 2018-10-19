@@ -122,7 +122,7 @@ sap.ui.define([
             // }
 
             if (!bValidationError) {
-                MessageToast.show("Sales order created successfully!");
+                MessageToast.show("Sales order creation in process");
                 this.getOwnerComponent().wechat.createOrder({
                     "OpenId": this.openId,
                     "OrderType": "OR",
