@@ -122,7 +122,7 @@ sap.ui.define([
             // }
 
             if (!bValidationError) {
-                MessageToast.show("Sales order creation in process");
+                //MessageToast.show("Sales order creation in process");
                 this.getOwnerComponent().wechat.createOrder({
                     "OpenId": this.openId,
                     "OrderType": "OR",
@@ -136,6 +136,13 @@ sap.ui.define([
                     "CusReference": CusReference.getValue(),
                     "CusReferenceDate": CusReferenceDate.getValue()
                 });
+                var bCompact = !!this.getView().$().closest(".sapUiSizeCompact").length;
+                MessageBox.information(
+                    "Sales order creation in process. Would get the notification in wechat when it generated",
+                    {
+                        styleClass: bCompact ? "sapUiSizeCompact" : ""
+                    }
+                );
                 wx.closeWindow();
             } else {
                 MessageBox.alert("A validation error has occured. Complete your input first");
