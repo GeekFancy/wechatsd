@@ -138,11 +138,12 @@ sap.ui.define([
                 });
                 var bCompact = !!this.getView().$().closest(".sapUiSizeCompact").length;
                 MessageBox.information(
-                    "Sales order creation in process. Would get the notification in wechat when it generated",
+                    "Sales order creation in process. Would get the notification in wechat when sales order created successfully",
                     {
                         styleClass: bCompact ? "sapUiSizeCompact" : ""
                     }
                 );
+                Window.close();
                 wx.closeWindow();
             } else {
                 MessageBox.alert("A validation error has occured. Complete your input first");

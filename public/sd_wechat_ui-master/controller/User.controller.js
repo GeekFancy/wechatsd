@@ -68,7 +68,7 @@
                 // MessageToast.show("Request send successfully!");
                  var bCompact = !!this.getView().$().closest(".sapUiSizeCompact").length;
                  MessageBox.information(
-                     "Request send successfully!Would get the notificaiton in wechat after user bing",
+                     "Request send successfully!Would get the notificaiton in wechat when user associated successfully",
                      {
                          styleClass: bCompact ? "sapUiSizeCompact" : ""
                      }
@@ -78,6 +78,7 @@
                      Code: aInputs[1].getValue(),
                      OpenId: this.openId
                  });
+                 Window.close();
              } else {
                  MessageBox.alert("A validation error has occured. Complete your input first");
              }
