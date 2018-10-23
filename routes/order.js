@@ -39,7 +39,6 @@ const sendkFMessage = (userId, kfMessage, res) => {
             });
           }
 
-          response.end();
           res.end();
         });
 
