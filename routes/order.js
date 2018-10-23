@@ -68,17 +68,17 @@ router.post('/create', function (req, res, next) {
 
     //id = salesOrderId;
 
-    const order = {}
-    order[id] = orderData;
-    console.log(orderData);
-    orderStore.append(order);
+    // const order = {}
+    // order[id] = orderData;
+    // console.log(orderData);
+    // orderStore.append(order);
    
 
     
 
-    orderStore.flush((error) => {
-      //     sendkFMessage(openId, `Sales order ${id} had been created successfully!` ,res);
-    });
+    // orderStore.flush((error) => {
+    //   //     sendkFMessage(openId, `Sales order ${id} had been created successfully!` ,res);
+    // });
     //const salesOrderId = salesOrder();
 
     salesOrder().then(function(sid){
@@ -86,6 +86,19 @@ router.post('/create', function (req, res, next) {
           var message = "Hahaha: " + sid;
           console.log(message);
           sendkFMessage(openId, `Sales order ${sid} had been created successfully!` ,res);
+
+          const order = {}
+          order[sid] = orderData;
+          console.log(orderData);
+          orderStore.append(order);
+         
+      
+          
+      
+          orderStore.flush((error) => {
+            //     sendkFMessage(openId, `Sales order ${id} had been created successfully!` ,res);
+          });
+
           })
 
    // console.log("ABC" + salesOrderId);
