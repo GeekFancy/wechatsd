@@ -80,7 +80,7 @@ router.post('/create', function (req, res, next) {
       //     sendkFMessage(openId, `Sales order ${id} had been created successfully!` ,res);
     });
    // const salesOrderId = salesOrder();
-   const salesOrderId
+   const salesOrderId;
    salesOrder.then(function(id){
     salesOrderId = id;
    })
