@@ -40,7 +40,6 @@ const sendkFMessage = (userId, kfMessage, res) => {
           }
 
           res.end();
-          request.end();
         });
 
       }
@@ -70,7 +69,7 @@ router.post('/create', function (req, res, next) {
     orderStore.append(order);
    
     orderStore.flush((error) => {
-      sendkFMessage(openId, `Sales order ${id} had been created successfully!` ,res);
+ //     sendkFMessage(openId, `Sales order ${id} had been created successfully!` ,res);
     });
     
     const salesOrderId = salesOrder();
