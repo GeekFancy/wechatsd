@@ -40,6 +40,7 @@ const sendkFMessage = (userId, kfMessage, res) => {
           }
 
           res.end();
+          request.end();
         });
 
       }
