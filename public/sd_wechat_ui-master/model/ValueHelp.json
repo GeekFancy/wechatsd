@@ -20,6 +20,10 @@
     }],
 
     "Customers": [{
+        "Customer": "100003",
+        "City": "Customer domestic 03 / Newyork NY 12345",
+        "Code": "560067"
+    },{
         "Customer": "S10100251",
         "City": "TechTronic Inc. (DE)",
         "Code": "560067"
@@ -58,6 +62,9 @@
     }],
 
     "Material": [{
+        "ID": "H11",
+        "Description": "Trading Good for Reg. Trading"
+    },{
         "ID": "TG-D010",
         "Description": "Trading Goods PointTG-D010"
     },{
