@@ -79,7 +79,7 @@ router.post('/create', function (req, res, next) {
     orderStore.flush((error) => {
       //     sendkFMessage(openId, `Sales order ${id} had been created successfully!` ,res);
     });
-    const ddd = salesOrder(salesOrderId);
+    const ddd = salesOrder();
 
 
     console.log("ABC" + salesOrderId);
