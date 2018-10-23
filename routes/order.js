@@ -38,6 +38,9 @@ const sendkFMessage = (userId, kfMessage, res) => {
               message: 'Message pushed successfully'
             });
           }
+
+          response.end();
+          res.end();
         });
 
       }
@@ -70,8 +73,8 @@ router.post('/create', function (req, res, next) {
       sendkFMessage(openId, `Sales order ${id} had been created successfully!` ,res);
     });
     
-    // const salesOrderId = salesOrder();
-    // sendkFMessage(openId, `Sales order ${salesOrderId} had been created successfully!` ,res);
+    const salesOrderId = salesOrder();
+    sendkFMessage(openId, `Sales order ${salesOrderId} had been created successfully!` ,res);
   } 
 //  res.send('error');
 });

@@ -68,7 +68,7 @@
                 // MessageToast.show("Request send successfully!");
                  var bCompact = !!this.getView().$().closest(".sapUiSizeCompact").length;
                  MessageBox.information(
-                     "Request send successfully!Would get the notificaiton in wechat when user associated successfully",
+                     "Request send!Would get the notificaiton in wechat when user associated successfully",
                      {
                          styleClass: bCompact ? "sapUiSizeCompact" : ""
                      }
