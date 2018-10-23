@@ -78,7 +78,6 @@
                      Code: aInputs[1].getValue(),
                      OpenId: this.openId
                  });
-                 Window.close();
              } else {
                  MessageBox.alert("A validation error has occured. Complete your input first");
              }
@@ -87,6 +86,8 @@
          doBinding: function(data) {
             this.getOwnerComponent().wechat.bindUser(data);
             wx.closeWindow();
+            window.close();
+
          },
 
          /**
@@ -114,7 +115,6 @@
          //get validation code
          onGetCode: function () {
             var oButton = this.getView().byId('buttonGetCode');
-
             oButton.setEnabled(false);
             oButton.setText('Sent');
          }
