@@ -131,7 +131,7 @@ sap.ui.define([
                     "ShipToParty": SoldToParty.getDescription(),
                     "Material": Material.getDescription(),
                     "Quantity": Quantity.getValue(),
-                    "Unit": "PC",
+                    "Unit": "EA",
                     "ReqDelDate": ReqDelDate.getValue(),
                     "CusReference": CusReference.getValue(),
                     "CusReferenceDate": CusReferenceDate.getValue()
@@ -177,7 +177,7 @@ sap.ui.define([
                 productInput.setDescription(oSelectedItem.getDescription())
 
                 var quantityInput = this.byId("inputQuantity");
-                quantityInput.setDescription("PC");
+                quantityInput.setDescription("EA");
             }
             evt.getSource().getBinding("items").filter([]);
         }

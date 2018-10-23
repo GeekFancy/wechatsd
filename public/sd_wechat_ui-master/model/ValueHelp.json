@@ -22,7 +22,7 @@
     "Customers": [{
         "Customer": "100003",
         "City": "Customer domestic 03 / Newyork NY 12345",
-        "Code": "560067"
+        "Code": ""
     },{
         "Customer": "S10100251",
         "City": "TechTronic Inc. (DE)",
