@@ -65,14 +65,14 @@
              }
              // output result
              if (!bValidationError) {
-                // MessageToast.show("Request send successfully!");
-                 var bCompact = !!this.getView().$().closest(".sapUiSizeCompact").length;
-                 MessageBox.information(
-                     "Request send!Would get the notificaiton in wechat when user associated successfully",
-                     {
-                         styleClass: bCompact ? "sapUiSizeCompact" : ""
-                     }
-                 );
+                 MessageToast.show("Request send successfully!");
+                //  var bCompact = !!this.getView().$().closest(".sapUiSizeCompact").length;
+                //  MessageBox.information(
+                //      "Request send!Would get the notificaiton in wechat when user associated successfully",
+                //      {
+                //          styleClass: bCompact ? "sapUiSizeCompact" : ""
+                //      }
+                //  );
                  this.doBinding({
                      Email: aInputs[0].getValue(),
                      Code: aInputs[1].getValue(),

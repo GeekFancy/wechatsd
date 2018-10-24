@@ -108,6 +108,15 @@
                                     change="handleDateChange"/>
 							</f:fields>
 						</f:FormElement>
+                    	<f:FormElement label="{i18n>CusRefDate}">
+							<f:fields>
+                                <DatePicker
+                                    id="inputCusRefDate"
+                                    class="sapUiSmallMarginBottom"
+                                    placeholder="Enter Date ..."
+                                    change="handleDateChange"/>
+							</f:fields>
+						</f:FormElement>
                     	<f:FormElement label="{i18n>CusRef}">
 							<f:fields>
                                 <Input
@@ -118,15 +127,7 @@
                                     editable="true" />
 							</f:fields>
 						</f:FormElement>
-                    	<f:FormElement label="{i18n>CusRefDate}">
-							<f:fields>
-                                <DatePicker
-                                    id="inputCusRefDate"
-                                    class="sapUiSmallMarginBottom"
-                                    placeholder="Enter Date ..."
-                                    change="handleDateChange"/>
-							</f:fields>
-						</f:FormElement>
+
 
                         <f:FormElement >
 							<f:fields>

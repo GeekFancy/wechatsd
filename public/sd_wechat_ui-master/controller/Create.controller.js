@@ -122,7 +122,7 @@ sap.ui.define([
             // }
 
             if (!bValidationError) {
-                //MessageToast.show("Sales order creation in process");
+                MessageToast.show("Sales order creation in process");
                 this.getOwnerComponent().wechat.createOrder({
                     "OpenId": this.openId,
                     "OrderType": "OR",
@@ -136,13 +136,13 @@ sap.ui.define([
                     "CusReference": CusReference.getValue(),
                     "CusReferenceDate": CusReferenceDate.getValue()
                 });
-                var bCompact = !!this.getView().$().closest(".sapUiSizeCompact").length;
-                MessageBox.information(
-                    "Sales order creation in process. Would get the notification in wechat when sales order created successfully",
-                    {
-                        styleClass: bCompact ? "sapUiSizeCompact" : ""
-                    }
-                );
+                // var bCompact = !!this.getView().$().closest(".sapUiSizeCompact").length;
+                // MessageBox.information(
+                //     "Sales order creation in process. Would get the notification in wechat when sales order created successfully",
+                //     {
+                //         styleClass: bCompact ? "sapUiSizeCompact" : ""
+                //     }
+                // );
                 Window.close();
                 wx.closeWindow();
             } else {
