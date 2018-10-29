@@ -108,7 +108,7 @@
                                     change="handleDateChange"/>
 							</f:fields>
 						</f:FormElement>
-                    	<f:FormElement label="{i18n>CusRefDate}">
+                    	<f:FormElement label="{i18n>CusRefDate}" visible="false">
 							<f:fields>
                                 <DatePicker
                                     id="inputCusRefDate"
@@ -118,7 +118,7 @@
                                     change="handleDateChange"/>
 							</f:fields>
 						</f:FormElement>
-                    	<f:FormElement label="{i18n>CusRef}">
+                    	<f:FormElement label="{i18n>CusRef}" visible="false">
 							<f:fields>
                                 <Input
                                     id="inputCusRef"
