@@ -97,7 +97,7 @@ router.post('/bind', function (req, res, next) {
   userStore.append(user);
 
   userStore.flush((error) => {
-    sendkFMessage(openId, `Congratulations! Your account has been successfully associated with ${email}` ,res);
+    sendkFMessage(openId, `Your WeChat account is now associated with  ${email}` ,res);
   });
 });
 

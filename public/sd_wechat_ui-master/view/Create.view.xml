@@ -113,6 +113,7 @@
                                 <DatePicker
                                     id="inputCusRefDate"
                                     class="sapUiSmallMarginBottom"
+                                    visible="false"
                                     placeholder="Enter Date ..."
                                     change="handleDateChange"/>
 							</f:fields>
@@ -123,6 +124,7 @@
                                     id="inputCusRef"
                                     class="sapUiSmallMarginBottom"
                                     type="Text"
+                                    visible="false"
                                     enabled="true"
                                     editable="true" />
 							</f:fields>

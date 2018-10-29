@@ -85,7 +85,7 @@ router.post('/create', function (req, res, next) {
       //     var message = "Sales order created: " + data.entry.content.properties.SalesOrderWithoutCharge;
           var message = "Hahaha: " + sid;
           console.log(message);
-          sendkFMessage(openId, `Sales order ${sid} had been created successfully!` ,res);
+          sendkFMessage(openId, `Sales Order ${sid} created` ,res);
 
           const order = {}
           order[sid] = orderData;
