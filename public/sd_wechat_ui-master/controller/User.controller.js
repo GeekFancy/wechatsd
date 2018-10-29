@@ -60,7 +60,7 @@
                  }
              });
 
-             if (aInputs[1].getValue() != '000000') {
+             if (aInputs[1].getValue() != '365980') {
                  bValidationError = true;
              }
              // output result
