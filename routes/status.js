@@ -53,7 +53,7 @@ router.post('/push', function (req, res, next) {
  // const status = 'In Process';
   console.log(req.body);
 
-  sendkFMessage(openId, `Sales Order ${Id} status is ${status}` ,res);
+  sendkFMessage(openId, `Sales Order ${Id} status updated to ${status}` ,res);
 }); 
 
 module.exports = router;
