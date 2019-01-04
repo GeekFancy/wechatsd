@@ -50,6 +50,7 @@ const handleText = (msg) => {
 
 const handleSubscribe = (msg) => {
   return message.getSubscribeMessage(msg.FromUserName);
+  console.log("OpenId: " +msg.FromUserName);
 };
 
 router.use('/', wechat(config.secret, function (req, res, next) {
