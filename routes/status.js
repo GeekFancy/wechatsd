@@ -47,10 +47,10 @@ const sendkFMessage = (userId, kfMessage, res) => {
 
 router.post('/push', function (req, res, next) {
   const openId = 'oSB6R0eIKYxbduY0iIRTOEcCJ8Ws';
- // const Id = req.body.ID;
- // const status = req.body.status;
-  const Id = '1234';
-  const status = 'In Process';
+  const Id = req.body.ID;
+  const status = req.body.status;
+  //const Id = '1234';
+ // const status = 'In Process';
   console.log(req.body);
 
   sendkFMessage(openId, `Sales Order ${Id} status is ${status}` ,res);
