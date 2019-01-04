@@ -45,7 +45,7 @@ const sendkFMessage = (userId, kfMessage, res) => {
 };
 
 
-router.post('/status', function (req, res, next) {
+router.post('/push', function (req, res, next) {
   const openId = 'oSB6R0eIKYxbduY0iIRTOEcCJ8Ws';
  // const Id = req.body.ID;
  // const status = req.body.status;

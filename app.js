@@ -10,6 +10,7 @@ var wechat = require('./routes/wechat');
 var initializer = require('./routes/initializer');
 var sign = require('./routes/sign');
 var order = require('./routes/order');
+var status = require('./routes/status');
 
 var app = express();
 
@@ -31,6 +32,7 @@ app.use('/wechat', wechat);
 app.use('/initializer', initializer);
 app.use('/sign', sign);
 app.use('/order', order);
+app.use('/status', status);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
