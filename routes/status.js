@@ -49,11 +49,12 @@ router.post('/push', function (req, res, next) {
   const openId = 'oSB6R0eIKYxbduY0iIRTOEcCJ8Ws';
   const Id = req.body.ID;
   const status = req.body.status;
+  const bstatus = req.body.bstatus;
   //const Id = '1234';
  // const status = 'In Process';
   console.log(req.body);
 
-  sendkFMessage(openId, `Sales Order ${Id} status updated to ${status}` ,res);
+  sendkFMessage(openId, `Sales Order ${Id} status updated from ${bstatus} to ${status}` ,res);
 }); 
 
 module.exports = router;
