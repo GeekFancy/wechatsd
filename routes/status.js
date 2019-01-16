@@ -54,7 +54,11 @@ router.post('/push', function (req, res, next) {
  // const status = 'In Process';
   console.log(req.body);
 
-  sendkFMessage(openId, `Sales Order ${Id} status updated from ${bstatus} to ${status}` ,res);
+  const getSigninUrl = () => {
+    return `https://personslist-test.cfapps.eu10.hana.ondemand.com/`
+  };
+
+  sendkFMessage(openId, `Sales Order <a href="${getSigninUrl()}">${Id}</a> status updated from ${bstatus} to ${status}` ,res);
 }); 
 
 module.exports = router;
