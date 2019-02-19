@@ -21,12 +21,7 @@ function getCustomizedMenu() {
             "type": "view", 
             "name": "Create Sales Order", 
             "url": `https://open.weixin.qq.com/connect/oauth2/authorize?appid=${config.secret.appid}&redirect_uri=${encodeURIComponent(config.uiServer)}&response_type=code&scope=snsapi_base&state=create#wechat_redirect`
-        },
-        {
-          "type": "view", 
-          "name": "Create Sales Order ER9", 
-          "url": `https://open.weixin.qq.com/connect/oauth2/authorize?appid=${config.secret.appid}&redirect_uri=${encodeURIComponent(config.createSOServer)}&response_type=code&scope=snsapi_base&state=create#wechat_redirect`
-        },        
+        },      
         {
             "name": "More", 
             "sub_button": [
@@ -44,7 +39,12 @@ function getCustomizedMenu() {
                   "type": "view",
                   "name": "SAP",
                   "url": "http://www.sap.com"
-                }
+                },
+                {
+                  "type": "view",
+                  "name": "Create Sales Order ER9",
+                  "url": "https://zwechatsocreate-i072128trial.dispatcher.hanatrial.ondemand.com"
+                }               
             ]
         }
      ]
