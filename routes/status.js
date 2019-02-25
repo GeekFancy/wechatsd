@@ -37,7 +37,7 @@ const sendkFMessage = (userId, kfMessage, res) => {
             });
           }
 
-          res.end();
+          res.end();   
         });
 
       }
@@ -48,17 +48,28 @@ const sendkFMessage = (userId, kfMessage, res) => {
 router.post('/push', function (req, res, next) {
   const openId = 'oSB6R0eIKYxbduY0iIRTOEcCJ8Ws';
   const Id = req.body.ID;
-  const status = req.body.status;
-  const bstatus = req.body.bstatus;
-  //const Id = '1234';
- // const status = 'In Process';
-  console.log(req.body);
-
   const getSigninUrl = (Id) => {
     return `https://zwechatsodisplay-i072128trial.dispatcher.hanatrial.ondemand.com?salesOrderNo=${Id}`
   };
 
-  sendkFMessage(openId, `Sales Order <a href="${getSigninUrl(Id)}">${Id}</a> status updated from ${bstatus} to ${status}` ,res);
+  const sType = req.body.type;
+
+  if(sType === "D"){
+    const sOD = req.body.OD;
+    const lfimg = req.body.lfimg;
+
+    sendkFMessage(openId, `Sales Order <a href="${getSigninUrl(Id)}">${Id}</a> is in process. Outboudn delviery ${sOD} send ${lfimg}L material` ,res);
+  }else{
+    const status = req.body.status;
+    const bstatus = req.body.bstatus;
+    sendkFMessage(openId, `Sales Order <a href="${getSigninUrl(Id)}">${Id}</a> status updated from ${bstatus} to ${status}` ,res);
+  }
+
+  //const Id = '1234';
+ // const status = 'In Process';
+  console.log(req.body);
+
+
 }); 
 
 module.exports = router;
