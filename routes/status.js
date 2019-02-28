@@ -63,7 +63,13 @@ router.post('/push', function (req, res, next) {
   }else{
     const status = req.body.status;
     const bstatus = req.body.bstatus;
-    sendkFMessage(openId, `Sales Order <a href="${getSigninUrl(Id)}">${Id}</a> status updated from ${bstatus} to ${status}` ,res);
+    if (bstatus == null) {
+      sendkFMessage(openId, `Sales Order <a href="${getSigninUrl(Id)}">${Id}</a> created. Status is ${status}` ,res);
+    } else {
+      sendkFMessage(openId, `Sales Order <a href="${getSigninUrl(Id)}">${Id}</a> status updated from ${bstatus} to ${status}` ,res);
+    }
+
+   
   }
 
   //const Id = '1234';
