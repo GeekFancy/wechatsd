@@ -58,7 +58,6 @@ router.post('/push', function (req, res, next) {
     const sOD = req.body.OD;
     const lfimg = req.body.lfimg;
     const material = req.body.material;
-
     sendkFMessage(openId, `Sales Order <a href="${getSigninUrl(Id)}">${Id}</a> is in process. Outbound delivery ${sOD} send ${lfimg}L ${material}` ,res);
   }else{
     const status = req.body.status;
