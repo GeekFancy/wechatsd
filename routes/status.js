@@ -63,7 +63,8 @@ router.post('/push', function (req, res, next) {
     const status = req.body.status;
     const bstatus = req.body.bstatus;
     if (bstatus === "Unknow Status") {
-      sendkFMessage(openId, `Sales Order <a href="${getSigninUrl(Id)}">${Id}</a> created. Status is ${status}` ,res);
+ //     sendkFMessage(openId, `Sales Order <a href="${getSigninUrl(Id)}">${Id}</a> created. Status is ${status}` ,res);
+        sendkFMessage(openId, `Sales Order <a href="${getSigninUrl(Id)}">${Id}</a> has been blocked and pending for approve.` ,res);
     } else {
       sendkFMessage(openId, `Sales Order <a href="${getSigninUrl(Id)}">${Id}</a> status updated from ${bstatus} to ${status}` ,res);
     }
