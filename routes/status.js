@@ -52,13 +52,17 @@ router.post('/push', function (req, res, next) {
     return `https://zwechatsodisplay-i072128trial.dispatcher.hanatrial.ondemand.com?salesOrderNo=${Id}`
   };
 
+  const getSigninUrl_d = (Id) => {
+    return `https://zwechatsodisplay-i072128trial.dispatcher.hanatrial.ondemand.com?salesOrderNo=${Id}&delivery=true`
+  };
+
   const sType = req.body.type;
 
   if(sType === "D"){
     const sOD = req.body.OD;
     const lfimg = req.body.lfimg;
     const material = req.body.material;
-    sendkFMessage(openId, `Sales Order <a href="${getSigninUrl(Id)}">${Id}</a> is in process. Outbound delivery ${sOD} send ${lfimg}L ${material}` ,res);
+    sendkFMessage(openId, `Sales Order <a href="${getSigninUrl_d(Id)}">${Id}</a> is in process. Outbound delivery ${sOD} send ${lfimg}L ${material}` ,res);
   }else{
     const status = req.body.status;
     const bstatus = req.body.bstatus;
