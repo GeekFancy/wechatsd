@@ -47,6 +47,8 @@ const sendkFMessage = (userId, kfMessage, res) => {
 
 router.post('/push', function (req, res, next) {
   const openId = 'oSB6R0eIKYxbduY0iIRTOEcCJ8Ws';
+  const openId1 = 'oSB6R0dIAGQcGdExN_kRH1VOQ7t4';
+  
   const Id = req.body.ID;
   const getSigninUrl = (Id) => {
     return `https://zwechatsodisplay-i072128trial.dispatcher.hanatrial.ondemand.com?salesOrderNo=${Id}`
@@ -69,6 +71,7 @@ router.post('/push', function (req, res, next) {
     if (bstatus === "Unknow Status") {
  //     sendkFMessage(openId, `Sales Order <a href="${getSigninUrl(Id)}">${Id}</a> created. Status is ${status}` ,res);
         sendkFMessage(openId, `Sales Order <a href="${getSigninUrl(Id)}">${Id}</a> has been blocked and pending for approve.` ,res);
+        sendkFMessage(openId1, `Sales Order <a href="${getSigninUrl(Id)}">${Id}</a> has been blocked and pending for approve.` ,res);
     } else {
       sendkFMessage(openId, `Sales Order <a href="${getSigninUrl(Id)}">${Id}</a> status updated from ${bstatus} to ${status}` ,res);
     }
