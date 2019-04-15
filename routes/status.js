@@ -73,7 +73,7 @@ router.post('/push', function (req, res, next) {
     sendkFMessage(openId2, `Sales Order <a href="${getSigninUrl_d(Id)}">${Id}</a> has been approved.` ,res); 
   }
   else{
-    const status = req.body.status;
+    const status = req.body.status; 
     const bstatus = req.body.bstatus;
     if (bstatus === "Unknow Status") {
  //     sendkFMessage(openId, `Sales Order <a href="${getSigninUrl(Id)}">${Id}</a> created. Status is ${status}` ,res);
