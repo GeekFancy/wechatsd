@@ -67,7 +67,10 @@ router.post('/push', function (req, res, next) {
     const lfimg = req.body.lfimg;
     const material = req.body.material;
     sendkFMessage(openId, `Sales Order <a href="${getSigninUrl_d(Id)}">${Id}</a> is in process. Outbound delivery ${sOD} send ${lfimg}L ${material}` ,res);
-  }else{
+  }else if(sType === "B"){
+    sendkFMessage(openId, `Sales Order <a href="${getSigninUrl(Id)}">${Id}</a> has been approved.` ,res);
+  }
+  else{
     const status = req.body.status;
     const bstatus = req.body.bstatus;
     if (bstatus === "Unknow Status") {
