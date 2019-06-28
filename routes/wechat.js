@@ -14,6 +14,9 @@ const handleEvent = (msg) => {
   }
 
   switch (EventKey) {
+    case 'notification': //notification
+      return message.getNotification(FromUserName);
+      break;
     case 'profile':
       return message.getProfile(FromUserName);
       break;
