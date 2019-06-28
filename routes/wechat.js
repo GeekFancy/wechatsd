@@ -7,11 +7,11 @@ const config = require('../config');
 
 const handleEvent = (msg) => {
   const { EventKey, FromUserName } = msg;
-  const auth = message.getAuthorizationCheck(FromUserName);
+//   const auth = message.getAuthorizationCheck(FromUserName);
 
-  if (auth) {
-    return auth;
-  }
+//   if (auth) {
+//     return auth;
+//   }
 
   switch (EventKey) {
     case 'notification': //notification
