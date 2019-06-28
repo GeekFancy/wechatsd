@@ -67,7 +67,7 @@ router.use('/', wechat(config.secret, function (req, res, next) {
     if (msg.Event === 'subscribe') {
       response = handleSubscribe(msg);
     }
-    else if (msg.Event === 'click') {
+    else if (msg.Event === 'CLICK') {
       response = handleEvent(msg);
     }
   }
