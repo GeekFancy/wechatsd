@@ -19,21 +19,26 @@ function getCustomizedMenu() {
     "button": [
         {
             "type": "view", 
-            "name": "Create Sales Order", 
-            "url": `https://open.weixin.qq.com/connect/oauth2/authorize?appid=${config.secret.appid}&redirect_uri=${encodeURIComponent(config.uiServer)}&response_type=code&scope=snsapi_base&state=create#wechat_redirect`
-        },      
+            "name": "My Profile", 
+            "url": "https://cpl.mo.sap.corp/launchpad/call_url.php?url=https://uyt928-er9001-rc.wdf.sap.corp:446/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-language=&sap-client=928"
+        }, 
         {
-            "name": "More", 
+            "type": "view", 
+            "name": "My Inbox", 
+            "url": "https://uyt928-er9001-rc.wdf.sap.corp:446/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-language=&sap-client=928&appState=lean#WorkflowTask-displayInbox?allItems=true"
+        },     
+        {
+            "name": "Order Service", 
             "sub_button": [
                 {
-                    "type": "click",
-                    "name": "My Profile", 
-                    "key": `profile`
+                    "type": "view",
+                    "name": "Display Sales Orders", 
+                    "url": "https://uyt928-er9001-rc.wdf.sap.corp:446/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?appState=lean#SalesOrder-manage"
                 },
                 {
                     "type": "click", 
-                    "name": "Display Order", 
-                    "key": "display"
+                    "name": "Notification test", 
+                    "key": "notification"
                 },
                 {
                   "type": "view",
@@ -42,8 +47,8 @@ function getCustomizedMenu() {
                 },
                 {
                   "type": "view",
-                  "name": "Create Sales Order ER9",
-                  "url": "https://zwechatsocreate-i072128trial.dispatcher.hanatrial.ondemand.com"
+                  "name": "Create Sales Orders",
+                  "url": "https://uyt928-er9001-rc.wdf.sap.corp:446/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html#SalesDocument-create?sap-ui-tech-hint=GUI"
                 }               
             ]
         }
