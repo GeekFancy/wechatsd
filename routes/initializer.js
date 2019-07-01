@@ -16,64 +16,25 @@ const mediaNewsStore = new store(path.join(__dirname, '../data/media-news.txt'))
 
 function getCustomizedMenu() {
   return 
-//   {
-//     "button": [
-//         {
-//             "type": "view", 
-//             "name": "Create Sales Order", 
-//             "url": `https://open.weixin.qq.com/connect/oauth2/authorize?appid=${config.secret.appid}&redirect_uri=${encodeURIComponent(config.uiServer)}&response_type=code&scope=snsapi_base&state=create#wechat_redirect`
-//         },      
-//         {
-//             "name": "More", 
-//             "sub_button": [
-//                 {
-//                     "type": "click",
-//                     "name": "My Profile", 
-//                     "key": `profile`
-//                 },
-//                 {
-//                     "type": "click", 
-//                     "name": "Display Order", 
-//                     "key": "display"
-//                 },
-//                 {
-//                   "type": "view",
-//                   "name": "SAP",
-//                   "url": "http://www.sap.com"
-//                 },
-//                 {
-//                   "type": "view",
-//                   "name": "Create Sales Order ER9",
-//                   "url": "https://zwechatsocreate-i072128trial.dispatcher.hanatrial.ondemand.com"
-//                 }               
-//             ]
-//         }
-//      ]
-//   };
   {
     "button": [
         {
             "type": "view", 
-            "name": "My Profile", 
-            "url": "https://cpl.mo.sap.corp/launchpad/call_url.php?url=https://uyt928-er9001-rc.wdf.sap.corp:446/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-language=&sap-client=928"
-        }, 
+            "name": "Create Sales Order", 
+            "url": `https://open.weixin.qq.com/connect/oauth2/authorize?appid=${config.secret.appid}&redirect_uri=${encodeURIComponent(config.uiServer)}&response_type=code&scope=snsapi_base&state=create#wechat_redirect`
+        },      
         {
-            "type": "view", 
-            "name": "My Inbox", 
-            "url": "https://uyt928-er9001-rc.wdf.sap.corp:446/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-language=&sap-client=928&appState=lean#WorkflowTask-displayInbox?allItems=true"
-        },     
-        {
-            "name": "Order Service", 
+            "name": "More", 
             "sub_button": [
                 {
-                    "type": "view",
-                    "name": "Display Sales Orders", 
-                    "url": "https://uyt928-er9001-rc.wdf.sap.corp:446/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?appState=lean#SalesOrder-manage"
+                    "type": "click",
+                    "name": "My Profile", 
+                    "key": `profile`
                 },
                 {
                     "type": "click", 
-                    "name": "Notification test", 
-                    "key": "notification"
+                    "name": "Display Order", 
+                    "key": "display"
                 },
                 {
                   "type": "view",
@@ -82,13 +43,14 @@ function getCustomizedMenu() {
                 },
                 {
                   "type": "view",
-                  "name": "Create Sales Orders",
-                  "url": "https://uyt928-er9001-rc.wdf.sap.corp:446/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html#SalesDocument-create?sap-ui-tech-hint=GUI"
+                  "name": "Create Sales Order ER9",
+                  "url": "https://zwechatsocreate-i072128trial.dispatcher.hanatrial.ondemand.com"
                 }               
             ]
         }
      ]
   };
+ 
 }
 
 function uploadImage(filepath, callback) {
