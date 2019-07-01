@@ -15,7 +15,8 @@ const mediaImageStore = new store(path.join(__dirname, '../data/media-image.txt'
 const mediaNewsStore = new store(path.join(__dirname, '../data/media-news.txt'));;
 
 function getCustomizedMenu() {
-//   return {
+  return 
+//   {
 //     "button": [
 //         {
 //             "type": "view", 
