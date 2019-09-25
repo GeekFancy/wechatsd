@@ -20,7 +20,7 @@ function getCustomizedMenu() {
         {
             "type": "view", 
             "name": "My Profile", 
-            "url": "https://cpl.mo.sap.corp/launchpad/call_url.php?url=https://uyt928-er9001-rc.wdf.sap.corp:446/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-language=&sap-client=928"
+            "url": "https://uyt928-er9001.wdf.sap.corp/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html?sap-language=&sap-client=928"
         }, 
         {
             "type": "view", 
