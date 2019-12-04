@@ -78,9 +78,7 @@ router.use('/', wechat(config.secret, function (req, res, next) {
   console.log(response);
 	
   res.reply(response);
-	if (msg.Event === 'CLICK') {
-    res.reply(response);
-  }
+
 }));
 
 module.exports = router;
