@@ -46,9 +46,9 @@ const sendkFMessage = (userId, kfMessage, res) => {
 
 
 router.post('/push', function (req, res, next) {
-  const openId = 'oSB6R0eIKYxbduY0iIRTOEcCJ8Ws';
-  const openId1 = 'oSB6R0dIAGQcGdExN_kRH1VOQ7t4';
-  const openId2 = 'oSB6R0T8hm4qAqiuHjfPVcI7eIcs';
+  const openId = 'oM8UC1AnmoH89Wz8kFXKThbVijTw';
+  const openId1 = 'oM8UC1AnmoH89Wz8kFXKThbVijTw';
+  const openId2 = 'oM8UC1AnmoH89Wz8kFXKThbVijTw';
   
   
   const Id = req.body.ID;
