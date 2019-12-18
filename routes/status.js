@@ -62,12 +62,12 @@ router.post('/push', function (req, res, next) {
 
   const sType = req.body.type;
 
-  if(sType === "D"){
+  if(sType == "D"){
     const sOD = req.body.OD;
     const lfimg = req.body.lfimg;
     const material = req.body.material;
     sendkFMessage(openId, `Sales Order <a href="${getSigninUrl_d(Id)}">${Id}</a> is in process. Outbound delivery ${sOD} send ${lfimg}L ${material}` ,res);
-  }else if(sType === "B"){
+  }else if(sType == "B"){
     sendkFMessage(openId, `Sales Order <a href="${getSigninUrl_d(Id)}">${Id}</a> has been approved.` ,res); 
   //  sendkFMessage(openId1, `Sales Order <a href="${getSigninUrl_d(Id)}">${Id}</a> has been approved.` ,res); 
     sendkFMessage(openId2, `Sales Order <a href="${getSigninUrl_d(Id)}">${Id}</a> has been approved.` ,res); 
@@ -75,7 +75,7 @@ router.post('/push', function (req, res, next) {
   else{
     const status = req.body.status; 
     const bstatus = req.body.bstatus;
-    if (bstatus === "Unknow Status") {
+    if (bstatus == "Unknow Status") {
  //     sendkFMessage(openId, `Sales Order <a href="${getSigninUrl(Id)}">${Id}</a> created. Status is ${status}` ,res);
         sendkFMessage(openId, `Sales Order <a href="${getSigninUrl(Id)}">${Id}</a> has been blocked and pending for approve.` ,res);
  //       sendkFMessage(openId1, `Sales Order <a href="${getSigninUrl(Id)}">${Id}</a> has been blocked and pending for approve.` ,res);
