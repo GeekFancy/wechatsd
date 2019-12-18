@@ -1,7 +1,11 @@
+var bodyParser = require('body-parser');
 const express = require('express');
 const request = require('request');
 
 const router = express.Router();
+
+router.use(bodyParser.json());
+router.use(bodyParser.urlencoded({ extended: false }));
 
 const accessTokenHelper = require('../lib/token/access-token');
 
