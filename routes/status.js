@@ -61,6 +61,9 @@ router.post('/push', function (req, res, next) {
   };
 
   const sType = req.body.type;
+  
+  console.log(sType);
+  console.log(Id);
 
   if(sType == "D"){
     const sOD = req.body.OD;
