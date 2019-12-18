@@ -7,8 +7,8 @@ module.exports = {
     secret: 'aebc551dcf318d050b86da4332235ea7',
     encodingAESKey: 'qKZrS7ClCedpfB8ovtIXaOUlnUyd4JhDH44v3STxPyq'
   },
-  server: 'https://wechat-intergration.herokuapp.com/wechat',
-  uiServer: 'https://wechat-intergration.herokuapp.com/sd_wechat_ui-master/',
+  server: 'https://wechatforsd.herokuapp.com/wechat',
+  uiServer: 'https://wechatforsd.herokuapp.com/sd_wechat_ui-master/',
   createSOServer: 'https://zwechatsocreate-i072128trial.dispatcher.hanatrial.ondemand.com',
   sdApi: 'https://ldai1cc2.wdf.sap.corp:50001/sap/opu/odata/sap/API_SALES_ORDER_WITHOUT_CHARGE_SRV/A_SalesOrderWithoutCharge/',
   credential: '_SAPI072128:x[MeZU6e[7cdkRk%jse2',
