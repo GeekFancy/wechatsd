@@ -6,7 +6,7 @@ sap.ui.define([
 	return ManagedObject.extend("sap.ui.sd.lib.Wechat", {
 
 		constructor : function (oController) {
-            this._server = 'https://wechat-intergration.herokuapp.com';
+            this._server = 'https://wechatforsd.herokuapp.com';
 			this._oController = oController;
 		},
 
